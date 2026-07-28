@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flyer Generator</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="controls">
+            <h1>Flyer Generator</h1>
+            
+            <div class="control-group">
+                <label for="nameInput">Name</label>
+                <input type="text" id="nameInput" placeholder="Enter name" />
+            </div>
+            
+            <div class="control-group">
+                <label for="positionInput">Position/Set</label>
+                <input type="text" id="positionInput" placeholder="Enter position" />
+            </div>
+            
+            <div class="control-group">
+                <label for="photoInput">Photo</label>
+                <input type="file" id="photoInput" accept="image/*" />
+            </div>
+            
+            <div class="control-group">
+                <label for="zoom">Zoom: <span id="zoomValue">1.0</span>x</label>
+                <input type="range" id="zoom" min="0.5" max="3" step="0.1" value="1" />
+            </div>
+            
+            <div class="button-group">
+                <button id="resetBtn">Reset Photo</button>
+                <button id="downloadBtn">Download Flyer</button>
+            </div>
+        </div>
+        
+        <div class="canvas-wrapper">
+            <canvas id="canvas"></canvas>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
